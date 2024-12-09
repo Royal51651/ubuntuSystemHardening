@@ -14,10 +14,9 @@ clamscan
 # permissions
 sudo chmod 644 /etc/passwd
 sudo chmod 600 /etc/shadow
-# pam files (this causes the system to be bricked for some reason. Only use if your sure this will work
-# cp -f "common-password" "/etc/pam.d"
-# cp -f "common-auth" "/etc/pam.d"
-# cp -f "login.defs" "/etc"
+# pam files
+cp -f "common-password" "/etc/pam.d"
+cp -f "common-auth" "/etc/pam.d"
 # post instructions
 echo "Change Firefox settings to be better"
 echo "Make sure to update"
