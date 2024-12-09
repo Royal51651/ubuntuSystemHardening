@@ -14,9 +14,6 @@ clamscan
 # permissions
 sudo chmod 644 /etc/passwd
 sudo chmod 600 /etc/shadow
-# pam files
-cp -f "common-password" "/etc/pam.d"
-cp -f "common-auth" "/etc/pam.d"
 # post instructions
 echo "Change Firefox settings to be better"
 echo "Make sure to update"
